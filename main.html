@@ -1,0 +1,789 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!--  
+<meta name="google-site-verification" content="miFB9fDCrrkxSPefyM5GTBsNsWIrsHIlSQeAElYCvvo" />
+-->    <!-- use on home page only add php code to check page for inclusion -->
+
+<!-- viewport meta tag for responsive  -->
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximun-scale=1.0" />
+
+<title>Dante Gatherings Page</title>
+
+
+<link href="css/styles.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="css/blueberry.css" />
+<!--blueberry is rotating stylesheet, only needed on home page -->
+
+<!--Remy Sharp Shim -->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+
+<!--Rotating images script, only needed on home page -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="js/jquery.blueberry.js"></script>
+<script>
+$(window).load(function() {
+	$('.blueberry').blueberry();
+});
+</script>
+<!--end rotating images script-->
+
+<!-- script for phone toggle nav --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+			$(".nav-button").click(function () {
+			$(".nav-button,.primary-nav").toggleClass("open");
+			});    
+		});
+		</script>
+<!--end toggle nav script-->
+
+</head>
+
+<!-- Begin body of Page -->
+<body>
+
+<header id="top"> <!-- Begin Header section -->
+  <div class="headerinner">
+    <div class="headerlogo">
+    	<a href="index.php"><img src="images/das-logo.png" alt="Intl Logo" > </a>
+    </div>
+    <!-- close header logo box -->
+    <div class="headertext">
+      <h2>Dante Alighieri Society of Washington</h2>
+      <h3 class="atpad" >per la diffusione della lingua e della cultura italiana nel mondo</h3>
+    </div>
+    <!-- close header text box -->
+    <div class="headerimg"> 
+    <img class="atpad" src="images/danteheadshot-200x200.jpg" alt="Dante Bust" > 
+    </div>
+    <!-- close header image box --> 
+   
+   
+  </div>
+  <!-- end header inner -->
+  
+<nav id="navigation"> <!-- Begin Navigation section -->
+    <ul id="navigation-items">
+      <li class="nav"><a 
+        	 	href="index.php">Home</a></li>
+  	 	
+      <li class="nav"><a
+             href="about.php">About</a></li>
+      
+      <li class="nav"><a
+       id="current"        href="gather.php">Gatherings</a></li>
+      
+      <li class="nav"><a
+             href="classes.php">Classes</a></li>
+      
+      <li class="nav"><a
+             href="resources.php">Resources</a></li>
+      
+      <li class="nav"><a
+             href="contact.php">Contacts</a></li>
+      
+    </ul>
+  </nav>
+  <!-- end navigation section --> 
+  
+  
+<!--    template for php
+  <li><a 
+  	    href="index.php">Home</a></li>
+   --> 
+   
+   
+   
+   
+   
+   <!--+++++++++++++  start mobile navigation   +++++++++++-->
+<button class="nav-button">Toggle Navigation</button>
+
+<div class="phone"> 
+
+<!-- <a href="email.php"> <img src="images/mail_icon_48.png" alt="Email Us" > </a>  -->
+</div>
+
+
+		<ul class="primary-nav">
+			<li><a href="index.php">HOME</a></li>
+            <li><a href="about.php">ABOUT</a>
+			<li><a href="gather.php">GATHERINGS</a></li>
+            <li class="parent"><a href="classes.php">CLASSES</a></li>
+				<ul>
+					<li><a href="classes-offerings.php">Offerings</a></li>
+					<li><a href="classes-schedule.php">Schedule</a></li>
+					<li><a href="classes-location.php">Location</a></li>
+				</ul>
+			</li>
+			<li><a href="resources.php">RESOURCES</a></li>
+			<li><a href="contact.php">CONTACTS</a></li>
+		</ul>
+<!--  ++++++++++++   end mobile navigation   ++++++++++++-->
+  
+</header>
+ <!-- end header section --> 
+
+<div id="wrapper"> <!-- Begin Wrapper section --><!-- header.php ends with <div id="wrapper"> tag and contains main navigation -->
+
+
+
+
+<div id="top">  </div>    <!-- Empty div to establish internal location -->
+
+<div id="innerbanner">		<!-- Begin Banner Section -->
+<img src="images/dantefeast.jpg" alt="Dante Dinner Meeting" />
+<h1>Join Our Social Gatherings!</h1>
+</div> 					
+					<!-- end banner section -->
+
+<main>					<!-- Begin main section -->
+
+<h3>About our social gatherings and events
+</h3>
+			<p>Devoted to sharing the wondrous art, history, literature, music, culture and cuisine of Italy, 
+            	the Dante Alighieri Society of Washington offers twice-monthly meetings with a rich program of 
+                lectures in English or Italian.  A warm, welcoming hospitality includes antipasti social hour 
+                or a delicious pasta dinner prior to the presentations.  And always, <em>vino </em> and <em>dolci</em>, 
+                generously shared by our members.</p>
+                
+             <p>Additionally, throughout the year we publicize and participate in events of 
+				the larger Seattle area Italian community.  </p>
+                
+			 <p>	Learn more about these gatherings and events below.</p>
+			
+            <ul>
+				<li>Regular meetings
+					<ul>
+						<li><a href="#format">English/Italian</a></li>
+						<li><a href="#location">Location</a></li>
+						<li><a href="#imeline">Timeline</a></li>
+						<li><a href="#register">Register</a></li>
+					</ul>
+			<!--	<li><a href="#upcoming">Topics of upcoming presentations</a> </li>-->
+				<li><a href="#special">Special events</a></li>
+				<li><a href="#calendar">Season calendar</a></li>
+		<!--		<li><a href="#recent">Recap of recent presentations</a></li>-->
+				<li><a href="#involved">Become involved</a></li>
+				<li><a href="contact.html#member">Membership</a></li>
+			</ul>
+			<p></p>
+
+<h3 id="format">English and Italian language meetings</h3>
+	<p>In keeping with the Dante mission to promote knowledge of Italian culture 
+		and language, the Society holds meetings on the 
+		second and fourth Wednesdays of each month, September through May. </p>
+		<p>The presentation 
+		given at the meeting on the <strong>second Wednesday is in English</strong>
+		 and the presentation 
+		given at the meeting on the <strong>fourth Wednesday is in Italian</strong>.  
+		A gathering featuring delicious homemade food, wine and conversation with fellow lovers of 
+		all things Italian precedes each meeting.  It is not necessary to be a 
+		member to attend but membership is appreciated to support the cost of 
+		these non-profit activities.
+	</p>
+	
+	<p>Return to <a href="#top">top.</a></p>
+
+<h3 id="location">Location of our regular meetings</h3>
+	<p>Unless otherwise noted, our meetings are held at the Garden House 
+		(formerly Headquarters House) located at 2336 15th Avenue South 
+		in the Beacon Hill neighborhood of Seattle. 	
+	</p>
+	
+	<img src="images/gardenhousemap.png" class="map" alt="Garden House Map" />
+	
+	<p>Directions: From I-5, take the Columbian Way/Spokane Street exit, eastbound. 
+		Turn left at the first light, Spokane Street and left again at the next light, 
+		15th Avenue S. After crossing Beacon Avenue, The Garden House is on the 
+		right side between Bayview and College Streets.
+     </p>
+        
+	 <p>Find your personal directions at: 
+		<a href="https://www.google.com/maps/place/2336+15th+Ave+S,+Seattle,+WA+98144/@47.5817562,-122.313058,17z/data=!3m1!4b1!4m2!3m1!1s0x54906a85d824147d:0x72ddaaf058d8a253?hl=en" target="_blank">google maps</a>
+	</p>
+
+	<p>Return to <a href="#top">top.</a></p>
+
+<h3 id="timeline">General timeline for meetings</h3>
+
+	<h4>English Language Meetings</h4>
+		<table>
+			<tr>
+				<th>Time</th>
+				<th>Activity</th>
+				<th>Cost</th>
+			</tr>
+			<tr>
+				<td>5:30pm-</td>
+				<td>Room Setup and meal preparation; volunteers welcome! Pasta, salad, and bread is prepared by members,
+                and all attendees are encouraged to bring wine, antipasti, or dessert to share. And, of course socializing.</td>
+				<td>None</td>
+			</tr>
+			<tr>
+				<td><strong>6:30pm-</strong></td>
+				<td>Dinner is served!
+					<a href="#register"><em>Preregistration*</em></a> is requested to 
+					ensure that enough food is available for everyone.
+				</td>
+				<td>$8 per person or $15 per couple</td>
+			</tr>
+			<tr>
+				<td><strong>7:30pm-</strong></td>
+				<td>A presentation related to Italian culture provided by 
+					guest speaker and is presented in the 
+					<strong>English language</strong>.
+				</td>
+				<td>None</td>
+			</tr>
+			<tr>	
+				<td>8:30pm – 9:00pm</td>
+				<td>Room Cleanup: everyone is encouraged to participate.</td>
+				<td>None</td>
+			</tr>
+		</table>
+
+<h4 id="register">*Register for Pre-Dante Pasta Dinner (English language meetings only)
+</h4>
+	<p>Call the Activity Line (425) 243-7663 by the Monday before to reserve your 
+		spot(s) or email your request to <a href="mailto:dante.reserve@gmail.com">dante.reserve@gmail.com.</a> Please provide 
+		your name and the number of attendees you are reserving for.   
+		Cost is $8.00 per person or $15.00 per couple to be paid at the dinner.  
+		Cash, check, credit or debit cards accepted.  <em>Reservations are not necessary for Italian meetings.</em>
+	</p>
+
+	<p>Return to <a href="#top">top.</a></p>
+
+
+	<h4>Italian Language Meetings</h4>
+		<table>
+			<tr>
+				<th>Time</th>
+				<th>Activity</th>
+				<th>Cost</th>
+			</tr>
+			<tr>
+				<td>6:00-</td>
+				<td>Room Setup; volunteers are welcome!</td>
+				<td>None</td>
+			</tr>
+			<tr>
+				<td><strong>6:30pm–</strong></td>
+				<td>Potluck wine, antipasti and dessert are provided by attendees, 
+					so bring your favorites to share.  Conversation 
+					is in both English and Italian, as you wish; 
+					it's a good opportunity 
+					to practice your Italian conversational skills.
+				</td>
+				<td>None, bring what you want to share</td>
+			</tr>
+			<tr>
+				<td><strong>7:30pm–</strong></td>
+				<td>A presentation related to Italian culture provided by 
+					guest speaker and is presented in the 
+					<strong>Italian language</strong>.
+				</td>
+				<td>None</td>
+			</tr>
+			<tr>	
+				<td>8:30pm – 9:00pm</td>
+				<td>Room Cleanup: everyone is encouraged to participate</td>
+				<td>None</td>
+			</tr>
+		</table>
+	
+
+	<p>Return to <a href="#top">top.</a></p>
+
+<!--<h3 id="upcoming">Upcoming presentation topics</h3>
+
+	<h4>English meeting:</h4>
+	<h4>"Great Italian Artworks of Parties and Feasts” presented by Rob Prufer
+ 	</h4>
+		<p>Wednesday, September 9th, 6:30 pm, The Garden House 
+ 		</p>
+		<p> September marks the beginning of our calendar of Dante feasts 
+			and gatherings as well as the arrival of Seattle’s Festa Italiana. 
+			To set the mood, we will immerse ourselves in great Italian paintings 
+			depicting delicious and gregarious feasting. Along the way we’ll 
+			investigate two grave controversies in Italian art history. 
+		</p>
+
+	<p>Return to <a href="#top">top.</a></p>
+
+
+	<h4>Italian meeting:</h4>
+	<h4> “Maratona infernale: in viaggio con Dante” (A Visual Journey to Accompany 
+		the Inferno) presented by Giuseppe Tassone </h4>
+		<p> Wednesday, September 23rd, 6:30 pm, The Garden House
+		</p>
+		<p>Join Giuseppe Tassone and the Dante Alighieri Society of Washington 
+			for Seattle’s first time ever premier of the popular canti from 
+			Dante’s Inferno selected from the movie Maratona infernale. 
+			The movie is a contemporary visual interpretation of the Inferno 
+			directed and co-created by Lamberto Lambertini and Paolo Peluffo. 
+			Prepare to journey to modern day Italy to the tune of well known 
+			canti such as Canto primo and Canto quinto, as well as other classics. 
+			The presentation will also introduce the Società Dante Alighieri’s project, 
+			In viaggio con Dante. 
+		</p>
+		<p>Though the presentation will be in Italian, it will be inviting and 
+			comprehensible to all. Don’t miss this entertaining evening 
+			in celebration of both the 750th anniversary of 
+			Dante’s birth and the beginning of the 2015-16 school year. 
+		</p>
+
+	<p>Return to <a href="#top">top.</a></p>-->
+
+<h3 id="special">Special events</h3>
+<p>In addition to the regular meetings, the Society participates in various other 
+	events involving Italian language and culture. 
+	For example:</p>
+	<ul>
+		<li>Our <strong>Festa di Natale per i Bambini</strong> celebrates 
+			the Christmas traditions of Italy every December.  For more details - <a href="pdf/festa_bambini.pdf" 
+            target="_blank">Check out the event brochure.</a>
+		</li>
+		<li><strong>DAS Annual Wine Tasting Dinner</strong> pairs a region's delicious food specialties with both
+        	celebrated and undiscovered local wines.
+		</li>
+		<li><a href="http://festaseattle.com" target="_blank"><strong>Seattle's 
+			Festa Italiana</strong></a> is a celebratory weekend each September at Seattle Center, with Italian
+            entertainment, marvelous food and gifts, and booths representing Italian clubs and activities.
+		</li>
+		<li><a href="http://www.siff.net" target="_blank"><strong>Italian Film 
+			Festival</strong></a> each fall and the <strong>Seattle International 
+			Film Festival (SIFF)</strong> each summer are in part sponsored by DAS. 
+		</li>
+		<li><strong>Small group events</strong> throughout the year, such 
+			as cooking classes, Italian conversation meetings, outings to opera, 
+			festivals, restaurants, art exhibits, Italian film showings, 
+			and similar activities of interest to members. 
+		</li>
+	</ul>
+<p></p>
+
+	<p>Return to <a href="#top">top.</a></p>
+
+<h3 id="calendar">Dante calendar 2016-2017</h3>
+<p>For a printable copy: <a href="pdf/dante_calendar.pdf" target="_blank">Dante Meeting and Event Calendar</a></p>
+
+	<table>
+		<tr>
+			<th>2016:</th>
+			<th>2017:</th>
+		</tr>
+		<tr>	
+			<td>
+				<ul>
+					<li>
+						September 14th: English Meeting
+						<ul>
+							<li>
+								Speaker: Nick Minotti
+							</li>
+							<li>
+								Topic: Preview of Italian Cultural Quiz to be given at Dante's Festa Booth
+							</li>
+						</ul>
+					</li>
+				</ul>
+                  <br/>
+				<ul>
+					<li>
+						September 28th: Italian Meeting
+						<ul>
+							<li>
+								Speaker: Marcella Nardi
+							</li>
+							<li>
+								Topic: "La Vita Quotidiana nel Medioevo" - Daily Life in the Medieval Age
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</td>
+			<td>
+				<ul>
+					<li>
+						January 11th: English Meeting
+						<ul>
+							<li>
+								Speaker: Terry Tazioli, Journalist of TVW's <em>Well Read</em>
+							</li>
+							<li>
+								Topic: "Italian Authors and More"
+							</li>
+						</ul>
+					</li>
+				</ul>
+                  <br/>
+				<ul>
+					<li>
+						January 25th: Italian Meeting
+						<ul>
+							<li>
+								Speaker: Franco Tesorieri
+							</li> 
+							<li>
+								Topic: Il Punto, Italian Cultural Center
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</td>
+		</tr>
+			
+		<tr>
+			<td>
+				<ul>
+					<li>
+						October 12th: English Meeting
+						<ul>
+							<li>
+								Speaker: Julia Normand
+							</li>
+							<li>
+								Topic: The Ins and Outs of Traveling Alone
+							</li>
+						</ul>
+					</li>
+				</ul>
+                  <br/>
+				<ul>
+					<li>
+						October 26th: Italian Meeting
+						<ul>
+							<li>
+								Speaker: Iole Alessandrini, <a href="http://iole.org" target="_blank">iole.org</a>
+							</li>
+							<li>
+								Topic: The Civita Institute in Rome, <a href="http://www.civitainstitute.org" target="_blank">			                                                                      civitainstitute.org</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</td>
+			<td>
+				<ul>
+					<li>
+						February 8th: English Meeting
+						<ul>
+							<li>
+								Speaker: Arne Millan of Esquin Wines
+							</li>
+							<li>
+								Topic: Narrated Pairing of Traditional Italian Food and Wine 
+							</li>
+                            <li>
+                            	<strong>by Reservation Only</strong>
+                            </li>
+						</ul>
+					</li>
+				</ul>
+                  <br/>
+				<ul>
+					<li>
+						February 22th: Italian Meeting
+						<ul>
+							<li>
+								Speaker: Albert J. Sbragia
+							</li>
+							<li>
+								Topic: Italian Spaces and Globalization: Matteo Garrone's <em>Reality</em> 
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<ul>
+					<li>
+						November 9th: English Meeting
+						<ul>
+							<li>
+								Speaker: Rebecca Novelli
+							</li>
+							<li>
+								Topic: The Train to Orvieto (Writing a Novel about 
+								Italians & Italy)
+							</li>
+						</ul>
+					</li>
+				</ul>
+                  <br/>
+				<ul>
+					<li>
+						No Italian Meeting in November
+					</li>
+				</ul>
+			</td>
+			<td>
+				<ul>
+					<li>
+						March 8th: English Meeting
+						<ul>
+							<li>
+								Speaker: Scott Fitzgerald of Bicerin USA
+							</li>
+							<li>
+								Topic: History of and a Tasting of his Liquors from 
+								Torino
+							</li>
+						</ul>
+					</li>
+				</ul>
+                  <br/>
+				<ul>
+					<li>
+						March 22rd: Italian Meeting
+						<ul>
+							<li>
+								Speaker: FR Thomas Lucas SJ, Rector of Seattle
+								University Jesuit Community
+							</li>
+							<li>
+								Topic: Restoration of the Rome Living Quarters of
+								Saint Ignatius Loyola, Founder of the Jesuits
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<ul>
+					<li>
+                    	December 3rd: Traditional Italian Celebration
+                      	<ul>
+							<li>
+								Festa di Natale per i Bambini
+							</li>
+						</ul>
+                    </li>
+          		</ul>
+                  <br/>	
+                <ul>
+                    <li>
+						December 14th: English Meeting
+						<ul>
+							<li>
+								Annual Christmas Party
+							</li>
+						</ul>
+					</li>
+				</ul>
+                  <br/>
+				<ul>
+					<li>
+						No Italian Meeting in December
+					</li>
+				</ul>
+			</td>
+			<td>
+				<ul>
+					<li>
+						April 12th: English Meeting
+						<ul>
+							<li>
+								Annual Meeting and Election Night
+							</li>
+                            <li>
+                            	Free Pasta Dinner for Paid Members
+                            </li>
+						</ul>
+					</li>
+				</ul>
+                  <br/>
+				<ul>
+					<li>
+						April 26th: Italian Meeting
+						<ul>
+							<li>
+								Speaker: to be announced
+							</li>
+							<li>
+								Topic: to be announced
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>
+            	<ul>
+                	<li>
+                    	<em>Send suggestions for topics or speakers</em> to:<a href="mailto:danteseattle.info@gmail.com">danteseattle.info@gmail.com</a> 
+                    </li>
+                    <li></li>
+                    <li>
+                    	Keep checking back as additions and updates to our calendar are made throughout the program year.
+                    </li>
+                </ul>
+			</td>
+			<td>
+				<ul>
+					<li>
+						May 10th: English Meeting
+						<ul>
+							<li>
+								Speaker: Rob Prufer
+							</li>
+							<li>
+								Topic: La Liberta': Judith and Archetypes of Liberation in Italian Art
+							</li>
+						</ul>
+					</li>
+				</ul>
+                  <br/>
+				<ul>
+					<li>
+						No Italian Meeting in May
+					</li>
+                    <li></li>
+					<li>
+						<em>June-August 2016: Summer break, no meetings held</em>
+					</li>
+				</ul>
+			</td>
+		</tr>
+	
+	</table>
+
+	<p>Return to <a href="#top">top.</a></p>
+
+
+<!--<h3 id="recent">Recent presentations</h3>
+
+<p>Include description and photos from prior month’s sessions and any available summary of the presentation.</p>
+
+	<p>Return to <a href="#top">top.</a></p>
+-->
+<h3 id="involved">Get Involved!</h3>
+	<p>Join us for a meeting. 
+		Become a <a href="contact.html#member"><b>member.</b></a>  
+		<a href="classes.html#register"><b>Register</b></a> for a language class.  
+		Volunteer.  We'll welcome you, and we'll get to know each other.
+	</p>
+	<p>As an all volunteer organization (except Language School
+		staff) Dante activities above are made possible only by the time, energy,
+		passion and love of our volunteers.  Our events and gatherings create 
+		unmatched opportunities to learn more about Italy, its language and culture 
+		and to meet other people, of Italian heritage or not, who share our common 
+		fascination with Italy.  It takes a lot of volunteers to make all 
+		the Dante events happen.  Member or not, you are encouraged to become 
+		actively engaged in Dante's programs - it's a great way to better know 
+		a great group!
+	</p>
+    <h4>Volunteer opportunites:</h4>
+		<ul>
+        	<li>Meetings:
+            	<ul>
+                    <li>Help set up</li>
+                    <li>Help clean up</li>
+                    <li>Bring wine, snacks, or dessert to share</li>
+                    <li>Cook the pasta dinner (you'll have lots of help)</li>
+                </ul>
+            </li>
+            <li>Write an article for <em>La Voce</em> newsletter</li>
+			<li>Festa Italian Chair: Coordinate our booth at Festa </li>
+			<li>Work a shift in the Dante booth at Festa Italiana </li>
+			<li>Help with Festa di Natale per i Bambini</li>
+            <li>Pre-Dante Pasta Coordinator: organize the cooking schedule</li>
+			<li>Program Chair: Coordinate the roster of speakers</li>
+			<li>Make a presentation at a meeting</li>
+			<li>Chair or serve on the Board nominating committee</li>
+			<li>Serve on the Board</li>	
+			<li>Serve as Volunteer Coordinator</li>	
+		</ul>
+	<p> To volunteer for any position or activity or if you have questions before 
+		committing, send an email to: 
+		<a href="mailto:danteseattle.info@gmail.com">danteseattle.info@gmail.com</a> 
+		or call: 206-556-4120.
+	</p>
+	
+		<p>Return to <a href="#top">top.</a></p>
+
+
+	
+	
+</main>					<!-- end main section -->
+
+ <aside class="atpad"> <!-- Begin aside section -->
+    
+   
+    <h4><a href="index.php"><b>Home</b></a></h4>
+    
+    
+    <!--   About -->
+    <h4><a href="about.php"><b>About</b></a></h4>
+    <!-- 
+    <p><a href="about-mission.php"><b>Our Mission & History</b></a></p>
+    <p><a href="about-intl.php"><b>Int'l Dante Society</b></a></p>
+    <p><a href="about-board.php"><b>Dante Board</b></a></p>
+    -->
+    
+    <!--   Gatherings -->
+    <h4><a href="gather.php"><b>Gatherings</b></a></h4>
+     <!-- 
+     <p><a href="gather-monthly.php"><b>Monthly Gatherings</b></a></p>
+     <p><a href="gather-events.php"><b>Special Events</b></a></p>
+     <p><a href="gather-calendar.php"><b>Calendar</b></a></p>
+     <p><a href="gather-register.php"><b>Dinner Reservations</b></a></p>
+     -->
+    
+    
+    <!--   Classes -->
+    <h4><a href="classes.php"><b>Classes</b></a></h4>
+   
+  	<p><a href="classes-offerings.php"><b>Offerings</b></a></p>
+    <p><a href="classes-schedule.php"><b>Schedule</b></a></p>
+    <p><a href="classes-location.php"><b>Location</b></a></p>
+    <!--   
+    <p><a href="classes-staff.php"><b>Staff</b></a></p>
+    <p><a href="classes-register.php"><b>Register for Classes</b></a></p>
+    <p><a href="classes-evaluate.php"><b>Class Evaluation</b></a></p>
+     -->
+    
+  
+    
+    <!--   Resources -->
+    <!--  <h4><a href="resources.php"><b>Resources</b></a></h4>
+    
+    <p><a href="lavoce.php"><b>La Voce Newsletters</b></a></p>
+    <p><a href="resources-community.php"><b>Community Resources</b></a></p>
+    <p><a href="resources-language.php"><b>Lnaguage Resources</b></a></p>
+    -->
+    
+    <!--   Contacts -->
+    <h4><a href="contact.php"><b>Contacts</b></a></h4>
+     <!--  <p></p>  -->
+    
+  </aside>
+  <!-- end aside section -->   <!--  or subnav.php  -->
+
+  <footer id="bottom"> <!-- Begin footer section -->
+    <h5>PO Box 9494, Seattle, WA 98109 / 206-556-4120 / 
+    <a href="mailto:danteseattle.info@gmail.com">danteseattle.info@gmail.com</a></h5>
+    <h5>The Dante Alighieri Society of Washington is a 501(c)(3) non-profit corporation 
+      organized to promote Italian language and culture throughout Washington State</h5>
+    <h5>Copyright 2015 &copy; All Rights Reserved </h5>
+  </footer>
+  <!-- end footer section --> 
+     
+</div>
+<!-- end wrapper  -->
+
+</body>
+<!-- end body of Page -->
+</html>

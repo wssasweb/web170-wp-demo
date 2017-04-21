@@ -1,0 +1,149 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+Theme Name: Mike Sinkula's WordPress Demo
+Author: Mike Sinkula of Premium Design Works
+Author URI: http://www.premiumdw.com/
+Description: This is my demo theme for the WEB170 WordPress class.
+Version: 1.0
+*/
+
+
+
+* { margin: 0; padding: 0; }
+
+html {
+	/*background: linear-gradient(to bottom,  #2b1d44 0%, #39275b 100%);*/ /* W3C */
+	-webkit-text-size-adjust: none;
+	}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%; /* sets all type sizes to a default 16px */
+	color: #000000;
+	background-color: #6f8e58;
+	background-image: url(images/bg-boxes.png);
+	background-position: top ; /* positioned to the top of page */
+	background-repeat: repeat-x; /* repeat horizontally */
+	}
+	
+h1 {
+	font-size: 2.25em; /* 36px */
+	line-height: 100%; /* 36px */
+	color: #FFF;
+	}
+	
+h2 {
+	font-size: 1.5em; /* 24px */
+	line-height: 100%; /* 24px */
+	color: #6f8e58; /* purple */
+	/*padding-top: 8px;*/ 
+	margin-bottom: 10px; /* changed */
+	}
+	
+h3 {
+	font-size: 1.125em; /* 18px */
+	line-height: 100%; /* 18px */
+	color: #6f8e58; /* purple */
+	padding-top: 10px; /* changed */
+	margin-bottom: 4px; /* changed */
+	}
+	
+p {
+	font-size: 1em;  /* 16px */
+	line-height: 150%; /* 24px */
+	margin-bottom: 10px;
+	}
+	
+ol, ul {
+	font-size: 1em;  /* 16px */
+	line-height: 150%; /* 24px */
+	margin-bottom: 10px;
+	padding: 0 40px;
+	}
+	
+img {
+	box-sizing: border-box;
+	max-width: 100%;
+	height: auto;
+	}
+	
+#header {
+	max-width: 600px; /* change to a max-width */
+	margin: 50px auto 20px auto;
+	}
+	
+	#header a {
+		color: #FFFFFF; /* white */
+		text-decoration: none; /* remove undeline */
+	}
+	
+	#header a:hover {
+		color: #ebe07a; /* gold */
+	}	
+	
+	#toggle {
+		display: none;
+	}
+	
+
+
+	
+#middle {
+	max-width: 560px; /* change to a max-width */
+	background-position: center;
+	background-repeat: repeat-y;
+	background-color:#FFFFFF;
+	overflow: hidden; /* prevents the great collapse */
+	margin: 0 auto;
+	padding: 20px; /* change padding to 20px all around */
+	border-radius: 10px; /* adds rounded corners */
+	}
+	
+	#middle a {
+		color: #6f8e58; /* purple */
+	}
+	
+	#middle a:hover {
+		color: #ebe07a; /* gold */
+	}
+	
+	
+	
+#footer {
+	max-width: 600px; /* change to a max-width */
+	margin: 0 auto;
+	padding: 20px 0; /* change the padding */
+	color: #FFF; /* give all text elements a color of white */
+	}
+	
+	#footer a {
+		color: #FFFFFF; /* white */
+	}
+	
+	#footer a:hover {
+		color: #ebe07a; /* gold */
+	}
+
+/* Mobile Screen Set to 600px or Below  */
+@media screen and (max-width: 600px) {
+	
+	#header {
+		padding-left: 10px;
+		padding-right: 10px;
+		overflow: hidden; /* prevent the great collapse */
+	}
+	
+	#middle {
+		padding: 20px 10px;
+	}
+	
+	#footer {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
+}
+
+	
