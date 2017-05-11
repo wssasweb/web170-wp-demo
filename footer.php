@@ -10,6 +10,10 @@
 </div>
 <!-- end wrapper  -->
 
+<!-- Start of WP Footer Function -->
+<?php wp_footer(); ?>
+<!-- End of WP Footer Function -->
+
 </body>
 <!-- end body of Page -->
 </html>

@@ -1,5 +1,45 @@
  <aside class="atpad"> <!-- Begin aside section -->
     
+  <div id="sidebar">  
+    <h4> <?php 
+    	if(is_page()) {							// if we are on a page...
+    
+    		echo get_the_title($post->post_parent); 
+    											// get the title of the parent page 
+    	} else {
+    		echo 'Blog';
+    	
+    	}
+    	  ?>	
+    </h4>
+
+
+<ul> 		<!-- ul wrap of loop to list child pages-->
+	
+ 	<?php 
+ 	
+ 	if(is_page())	{							// if we are on a page...
+ 	
+ 		if($post->post_parent) {				// if the page has a parent...
+ 			wp_list_pages(array('title_li' => '', 'child_of' => $post->post_parent, )); 	
+ 												// ... list the children of that parent	
+ 		}	else {								// if on the parent page ...
+ 				wp_list_pages(array('title_li' => '', 'child_of' => $post->ID, )); 
+ 		}
+ 	
+ 	} else {									//if we are not on a page
+ 	
+ 		wp_list_categories(array('title_li' => '',));
+ 												// list the Blog categories 
+ 	} 										
+ 	
+ 	
+ 	?>
+</ul> 	<!-- close loop of child pages-->
+</div>  <!-- close sidebar div-->
+    
+    
+ <!-- Begin Resource section of Sidebar -->   
     <h4> Join Us! </h4>
     <p><a href="contact.html#member"><b>Membership</b></a></p>
     <h4> Learn More! </h4>

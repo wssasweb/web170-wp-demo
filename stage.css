@@ -1,11 +1,12 @@
 @charset "UTF-8";
 /* CSS Document */
-
+?
+/*theme format compliments of Mike Sinkula's WordPress Demo*/
 /*
-Theme Name: Mike Sinkula's WordPress Demo
-Author: Mike Sinkula of Premium Design Works
-Author URI: http://www.premiumdw.com/
-Description: This is my demo theme for the WEB170 WordPress class.
+Theme Name: Sylvia Shiroyama's WordPress Protosite Staging Area
+Author: Sylvia Shiroyama of Shiro Design
+Author URI: http://www.sashiroyama.com/
+Description: This is my staging area for Protosite theme for the WEB170 WordPress class.
 Version: 1.0
 */
 
@@ -23,9 +24,9 @@ body {
 	font-size: 100%; /* sets all type sizes to a default 16px */
 	color: #000000;
 	background-color: #6f8e58;
-	background-image: url(images/bg-boxes.png);
-	background-position: top ; /* positioned to the top of page */
-	background-repeat: repeat-x; /* repeat horizontally */
+	/*background-image: url(images/lotus-image.png); */
+	/*background-position: top ; */ /* positioned to the top of page */
+	/*background-repeat: repeat-x; */ /* repeat horizontally */
 	}
 	
 h1 {
@@ -109,8 +110,21 @@ img {
 		color: #ebe07a; /* gold */
 	}
 	
+#menu {
+	width:35%;
+	float:left;
+	}
 	
+#logo {
+	width:65%;
+	float:right;
+	}
 	
+#logo img {
+	postion: relative;
+	margin: 100px 30px 0 30px}
+		
+
 #footer {
 	max-width: 600px; /* change to a max-width */
 	margin: 0 auto;
