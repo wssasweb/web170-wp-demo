@@ -171,6 +171,20 @@ list-style-type:square;
 list-style-position:inside;
 }
 
+#widgets {
+	overflow: hidden;
+}
+
+#widgets section.widget-item {
+	width: 30%;
+	float: left;
+	margin-right: 20px;
+}
+
+#widgets section.widget-item:last-child {
+	margin-right: 0px;
+}
+
 
 #banner li {
 list-style-type:none;
