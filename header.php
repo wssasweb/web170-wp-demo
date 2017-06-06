@@ -23,8 +23,9 @@ Version:		1.0
 
 <!-- viewport meta tag for responsive  -->
 <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximun-scale=1.0" />
+<meta name="description" content="<?php echo strip_tags(get_the_excerpt());  ?>" />
 
-<title><?php bloginfo('description');?> | <?php bloginfo ('name'); ?></title>
+<title><?php get_my_title_tag(); ?></title>
 
 <!-- Define Stylesheets -->
 <link href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" rel="stylesheet" />
