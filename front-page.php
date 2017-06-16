@@ -2,12 +2,16 @@
 
 <!-- Begin Page Content, no associated div -->
   
+<!--  Begin Flex Slider --> 
+
+<?php add_flexslider();  ?>
+
+<!--  End Flex Slider --> 
  
   
   	<main> <!-- Begin main section -->
   
   	<div id="widgets">	<!-- Begin widget section -->
-  	
   	
   <!-- Begin About section -->
   	<section class="widget-item">

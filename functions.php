@@ -177,27 +177,34 @@ function get_child_pages() {
 }
 //
 	
-// Add a Flexslider Gallery	
+// Add a Flexslider Gallery	from Attachment Images in WP
 function add_flexslider() {
 	
     global $post; // don't forget to make this a global variable inside your function
-    $attachments = get_children(array('post_parent' => $post->ID, 'order' => 'ASC', 'orderby' => 'menu_order',  'post_type' => 'attachment', 'post_mime_type' => 'image',));
+    			  // using $post->ID makes it applicable to what ever the current page is
+    			  // get_children is a wp provided function - see codex
+    $attachments = get_children(array('post_parent' => $post->ID, 
+    								  'post_type' => 'attachment',
+    								  'post_mime_type' => 'image',
+    								  'order' => 'ASC',
+    								  'orderby' => 'menu_order',     								   
+    								  ));
     if ($attachments) { // see if there are images attached to posting
-        echo '<div id="spotlight-home" class="flexslider">';
+        echo '<div class="flexslider">';
         echo '<ul class="slides">';
         foreach ( $attachments as $attachment ) { // create the list items for images with captions
             echo '<li>';
-            echo wp_get_attachment_image($attachment->ID, 'full'); // get image size large
-            echo '<span class="description">';
-            echo get_post_field('post_content', $attachment->ID); // get image description field
-            echo '</span>';
+            echo wp_get_attachment_image($attachment->ID, 'large'); // get image size large
+            echo '<p class="description">';  // description is not a class in flexslider.css
+            echo get_post_field('post_excerpt', $attachment->ID); // get image description field
+            echo '</p>';
             echo '</li>';
-        }
+        }  // end foreach attached image
         echo '</ul>';
         echo '</div>';
-    } // end see if images attached
+    } // endif to see if images attached
 } 
-// 
+// end function - add_flexslider
 
 // Get Featured Image with a Custom Link
 function get_featured_image_with_link() {
