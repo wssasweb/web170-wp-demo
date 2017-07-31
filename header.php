@@ -29,35 +29,14 @@ Version:		1.0
 
 <!-- Define Stylesheets -->
 <link href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" rel="stylesheet" />
-<!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/blueberry.css" /> -->
-<!--blueberry is rotating stylesheet, only needed on home page -->
-<link rel="stylesheet" href="flexslider.css" type="text/css">
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/flexslider.css" 
+	type="text/css" media="all" >
 <!-- End Stylesheets -->
 
+
 <!-- Define Scripts -->
-
-<!--Remy Sharp Shim -->
-<!--[if lt IE 9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
-</script>
-<![endif]-->
-
-
-
-<!--Rotating images script, only needed on home page -->
-<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/scripts/jquery.blueberry.js"></script>
-<script>
-$(window).load(function() {
-	$('.blueberry').blueberry();
-});
-</script>
--->
-<!--end blueberry rotating images script-->
-
-<!-- Woo Commerce flexslider -->
-<!-- Begin Scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<!--Woo Commerce flexslider images script, only needed on home page -->
 <script src="<?php bloginfo('template_directory'); ?>/scripts/jquery.flexslider.js"></script>
 <!-- End Scripts -->
 
@@ -67,8 +46,7 @@ $(window).load(function() {
     $('.flexslider').flexslider(); // call flexslider function
   });
 </script>
-<!-- End Flex Slider -->
-<!-- end Woo Commerce flexslider -->
+<!-- End Woo Commerce Flex Slider -->
 
 <!-- script for phone toggle nav --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
